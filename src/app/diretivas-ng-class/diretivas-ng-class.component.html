@@ -1,0 +1,18 @@
+<h1>
+    <i class="glyphicon" 
+    [class.glyphicon-star-empty]="!meuFavorito"
+    [class.glyphicon-star]="meuFavorito"
+    (click)="atualizarEstrela()"></i>
+</h1>
+
+<h1>
+    <i class="glyphicon" 
+    [ngClass]="{
+        'glyphicon-star-empty': !meuFavorito1,
+        'glyphicon-star':meuFavorito1
+    }"
+    (click)="atualizarEstrela1()"
+    >
+
+</i>
+</h1>

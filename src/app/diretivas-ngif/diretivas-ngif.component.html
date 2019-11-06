@@ -1,0 +1,15 @@
+<div class="text-center font-weight-bold">
+<h1 class="badge-primary "> Cursos</h1>
+
+<div *ngIf="cursos.length>0" [hidden]="mostrarCursos">
+        <div *ngFor="let curso of cursos">
+            {{curso}} 
+            <hr/></div>
+</div>
+<div *ngIf="cursos.length==0" [hidden]="mostrarCursos">
+    Sem cursos cadastrados
+</div>
+<br/>
+<button class="btn btn-outline-primary" (click)="onMostrarCurso()"> Mostrar Curso</button>
+<button class="btn btn-outline-primary" (click)="onAdicionarCurso()">Adicionar Curso</button>
+</div>
