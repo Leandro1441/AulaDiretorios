@@ -6,7 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./operador-elvis.component.scss']
 })
 export class OperadorElvisComponent implements OnInit {
-
+  
+  
+  tarefa:any={
+    desc: 'Descrição da tarefa',
+    reponsavel:null
+  }
   constructor() { }
 
   ngOnInit() {
