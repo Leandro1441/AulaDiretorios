@@ -12,7 +12,6 @@ export class HighligthMouseDirective {
     );*/
     this.backgroundColor="red";
   }
-
   @HostListener('window:load') windowLoad(){
     /*
     this._renderer.setElementStyle(
@@ -27,7 +26,6 @@ export class HighligthMouseDirective {
     );*/
     this.backgroundColor="white";
   }
-  
   @HostBinding('style.backgroundColor') backgroundColor:string;
 
   constructor(
