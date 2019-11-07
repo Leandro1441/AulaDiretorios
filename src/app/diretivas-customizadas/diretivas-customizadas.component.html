@@ -1,3 +1,4 @@
+<!--
 <p fundoAmarelo>
     Texto com fundo amarelo    
 </p>
@@ -5,3 +6,18 @@
 <p HighligthMouse>
     Texto com highLight com o mouse.
 </p>
+
+<hr>-->
+
+<div style="text-align: center;">
+    <h1>Cursos</h1>
+<div *ngIf="mostrarCursos">
+    <h3 *ngFor="let curso of cursos">{{curso}}</h3>
+</div>
+
+<div *ngElse="mostrarCursos">
+    <H3>Sem cursos cadastrados</H3>
+</div>
+<br/>
+<button class="btn btn-outline-primary" (click)="onMostrarCurso()"> Mostrar Curso</button>
+</div>

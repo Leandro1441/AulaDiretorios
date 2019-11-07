@@ -1,7 +1,7 @@
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DiretivasNgifComponent } from './diretivas-ngif/diretivas-ngif.component';
@@ -14,6 +14,8 @@ import { NgContentComponent } from './ng-content/ng-content.component';
 import { FundoAmareloDirective } from './shared/fundo-amarelo.directive';
 import { DiretivasCustomizadasComponent } from './diretivas-customizadas/diretivas-customizadas.component';
 import { HighligthMouseDirective } from './shared/highligth-mouse.directive';
+import { NgElseDirective } from './shared/ng-else.directive';
+
 
 @NgModule({
   declarations: [
@@ -27,7 +29,8 @@ import { HighligthMouseDirective } from './shared/highligth-mouse.directive';
     NgContentComponent,
     FundoAmareloDirective,
     DiretivasCustomizadasComponent,
-    HighligthMouseDirective
+    HighligthMouseDirective,
+    NgElseDirective
   ],
   imports: [
     BrowserModule,
